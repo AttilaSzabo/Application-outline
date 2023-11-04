@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bitter', serif;
+    color: white;
+}
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(../images/fust.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.options_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.options_box {
+    width: 350px;
+    height: 350px;
+    margin: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.palladion {
+    background-color: #212529;
+    background-image: url(../images/Palladion-Logo-RGB.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.palladion:hover {
+    transform: translateY(-15px);
+    box-shadow: 0px 0px 20px yellow;
+}
+
+.linditex {
+    background-color: #272727;
+    background-image: url(../images/LINDITEX\ Logo\ –\ kópia.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.linditex:hover {
+    transform: translateY(-15px);
+    box-shadow: 0px 0px 20px red;
+}
+
+@media only screen and ( max-width: 400px) {
+
+    .options_box {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media only screen and ( max-width: 320px) {
+
+    .options_container {
+        overflow: hidden;
+    }
+
+    .options_box {
+        width: 200px;
+        height: 200px
+    }
+}
