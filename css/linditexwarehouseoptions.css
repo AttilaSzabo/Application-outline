@@ -15,3 +15,72 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.options_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.options_box {
+    width: 380px;
+    height: 380px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: #212529;
+    transition: 0.5s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    box-shadow: inset 0 0 20px white;
+}
+
+.options_box i {
+    font-size: 3rem;
+    color: goldenrod;
+    margin-bottom: 50px;
+}
+
+.options_box:hover {
+    transform: translateY(-15px);
+}
+
+.options_box h2 {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    line-height: 0,7em;
+    color: white;
+}
+
+.options_box span {
+    color: red;
+    font-size: 1.3rem;
+    position: relative;
+    margin-left: 10px;
+}
+
+.options_box span:before {
+    position: absolute;
+    content: "";
+    top: -5px;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.options_box span:after {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 10px;
+}

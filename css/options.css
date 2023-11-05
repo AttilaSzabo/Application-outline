@@ -47,8 +47,8 @@ body {
 
 .linditex {
     background-color: #272727;
-    background-image: url(../images/LINDITEX\ Logo\ –\ kópia.jpg);
-    background-size: contain;
+    background-image: url(../images/linditex.png);
+    background-size: 90% auto;
     background-repeat: no-repeat;
     background-position: center;
 }
