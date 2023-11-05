@@ -35,11 +35,11 @@ body {
 
 .linditex {
     background-image: url(../images/linditex.png);
-    background-size: 150px auto;
+    background-size: 100px auto;
     background-repeat: no-repeat;
     background-position: center;
-    width: 180px;
-    height: 90px;
+    width: 120px;
+    height: 100px;
 }
 
 .palladion {
@@ -47,8 +47,8 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
 }
 
 .linditex:hover {

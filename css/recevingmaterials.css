@@ -10,7 +10,7 @@ body {
     background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(../images/fust.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
+    height: 1000px;
 }
 
 .title {
@@ -23,6 +23,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.companis input {
+    border: none;
+    background-color: none;
 }
 
 .compani_container {
@@ -35,11 +41,11 @@ body {
 
 .linditex {
     background-image: url(../images/linditex.png);
-    background-size: 150px auto;
+    background-size: 100px auto;
     background-repeat: no-repeat;
     background-position: center;
-    width: 180px;
-    height: 90px;
+    width: 120px;
+    height: 100px;
 }
 
 .palladion {
@@ -47,8 +53,8 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
 }
 
 .linditex:hover {
@@ -59,4 +65,100 @@ body {
 .palladion:hover {
     transform: translateY(-15px);
     box-shadow: 0px 0px 20px yellow;
+}
+
+/*************************************************************/
+
+.input_materials_container {
+    width: 90%;
+    height: 500px;
+    padding: 20PX 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px auto;
+    border-radius: 20px;
+}
+
+.customers_name {
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input {
+    position: relative;
+    margin: 10px 0;
+}
+
+.input input {
+    height: 60px;
+    margin: 5px 0;
+    position: relative;
+    background-color: transparent;
+    outline: transparent;
+    width: 280px;
+    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.514);
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: #212529;
+    border-radius: 10px;
+    color: white;
+    transition: 0.3s;
+}
+
+.placeholder {
+    position: absolute;
+    font-size: 1rem;
+    letter-spacing: 1.2px;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: white;
+    transition: 0.3s;
+}
+
+.input input:focus,
+.input input :valid {
+    background-color: #212529;
+    border: 1px solid red;
+    z-index: 1111;
+}
+
+.input input:focus + .placeholder,
+.input input:valid + .placeholder {
+    transform: translateY(-45px);
+    color: white;
+    font-size: 0.8rem;
+    background-color: #212529;
+    padding: 5px 10px;
+    border-bottom: 1px solid rgba(114, 112, 112, 0.966);
+    z-index: 1111;
+}
+
+
+
+
+/*
+.entryarea input:focus,
+.entryarea input:valid {
+    border: 2px solid red;
+}
+
+.entryarea input:focus + .labelline,
+.entryarea input:valid + .labelline {
+    transform: translate(-30px, -25px);
+    z-index: 1111;
+    background-color: #21252933;
+    padding: 5px 2px;
+}
+*/
+
+@media only screen and ( max-width: 400px) {
+
+    .customers_name {
+        font-size: 1.3rem;
+    }
 }
