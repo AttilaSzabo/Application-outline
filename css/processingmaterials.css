@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bitter', serif;
+    color: white;
+}
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(../images/fust.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.title {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.companis {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.compani_container {
+    background-color: #212529;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.linditex {
+    background-image: url(../images/linditex.png);
+    background-size: 150px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 180px;
+    height: 90px;
+}
+
+.palladion {
+    background-image: url(../images/Palladion-Logo-RGB.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 120px;
+    height: 120px;
+}
+
+.linditex:hover {
+    transform: translateY(-15px);
+    box-shadow: 0px 0px 20px red;
+}
+
+.palladion:hover {
+    transform: translateY(-15px);
+    box-shadow: 0px 0px 20px yellow;
+}
