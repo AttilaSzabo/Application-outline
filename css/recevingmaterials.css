@@ -87,9 +87,25 @@ body {
     margin-bottom: 20px;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form_container {
+    padding: 10px;
+    width: 100%;
+}
+
 .input {
     position: relative;
     margin: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .input input {
@@ -98,7 +114,7 @@ body {
     position: relative;
     background-color: transparent;
     outline: transparent;
-    width: 280px;
+    width: 90%;
     border: none;
     border: 1px solid rgba(255, 255, 255, 0.514);
     padding: 10px 20px;
@@ -107,6 +123,7 @@ body {
     border-radius: 10px;
     color: white;
     transition: 0.3s;
+    letter-spacing: 1.3px;
 }
 
 .placeholder {
@@ -114,10 +131,35 @@ body {
     font-size: 1rem;
     letter-spacing: 1.2px;
     top: 50%;
-    left: 10px;
+    left: 40px;
     transform: translateY(-50%);
     color: white;
     transition: 0.3s;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 300px;
+}
+
+.button input {
+    color: #212529;
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #ffffff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    transition: 0.5s;
+}
+
+.button input:hover {
+    transform: translateY(-10px);
 }
 
 .input input:focus,
@@ -129,7 +171,7 @@ body {
 
 .input input:focus + .placeholder,
 .input input:valid + .placeholder {
-    transform: translateY(-45px);
+    transform: translate(-10px, -40px);
     color: white;
     font-size: 0.8rem;
     background-color: #212529;
@@ -139,26 +181,34 @@ body {
 }
 
 
+@media only screen and ( min-width: 800px) {
 
-
-/*
-.entryarea input:focus,
-.entryarea input:valid {
-    border: 2px solid red;
-}
-
-.entryarea input:focus + .labelline,
-.entryarea input:valid + .labelline {
-    transform: translate(-30px, -25px);
-    z-index: 1111;
-    background-color: #21252933;
-    padding: 5px 2px;
-}
-*/
-
-@media only screen and ( max-width: 400px) {
-
-    .customers_name {
-        font-size: 1.3rem;
+    .form_container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
     }
+
+    .row {
+        width: 49%;
+    }
+
+    .input input {
+        width: 100%;
+    }
+
+    .input input:focus + .placeholder,
+    .input input:valid + .placeholder {
+    transform: translate(-30px, -40px);
+    }
+}
+
+@media only screen and ( min-width: 1200px) {
+
+
+   
+}
+
+@media only screen and ( min-width: 1400px) {
+
 }
